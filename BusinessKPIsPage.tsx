@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft, ChevronDown, BookOpen, Target, Download, FileText, FileSpreadsheet, Lock } from 'lucide-react';
+import { BrandLogo } from './LandingPage';
 
 export const BusinessKPIsPage = ({ onBack, onEnroll }: { onBack: () => void, onEnroll: () => void }) => {
   return (
@@ -16,7 +17,10 @@ export const BusinessKPIsPage = ({ onBack, onEnroll }: { onBack: () => void, onE
             </div>
             Back to Main Page
           </button>
-          <div className="font-bold text-lg tracking-tight hidden sm:block">IT <span className="text-[#ff4d4d]">Outcomes</span></div>
+          <div className="flex items-center gap-2.5 font-black text-lg tracking-tight hidden sm:flex">
+            <BrandLogo className="w-5 h-5 text-[#ff3b4e]" glow={false} />
+            <span className="text-slate-900"><span className="text-[#ff3b4e]">IT</span> OUTCOMES</span>
+          </div>
         </div>
       </nav>
 

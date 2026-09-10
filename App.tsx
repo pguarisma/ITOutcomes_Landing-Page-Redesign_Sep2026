@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LandingPage } from './LandingPage';
+import { Concept1DualDepth } from './Concept1DualDepth';
 import { CurriculumPage } from './CurriculumPage';
 import { BusinessKPIsPage } from './BusinessKPIsPage';
 import { ContactPage } from './ContactPage';
@@ -23,23 +23,23 @@ export default function App() {
   // Back button functionality: restores scroll position
   const goBack = () => {
     setView('landing');
-    // Using setTimeout to ensure the DOM has rendered the landing page before scrolling
     setTimeout(() => {
       window.scrollTo(0, scrollPos);
     }, 0);
   };
 
-  // Enroll button on curriculum page: goes to pricing section on landing page
+  // Enroll button on curriculum page
   const goToEnroll = () => {
     setView('landing');
     setTimeout(() => {
-      const pricingSection = document.getElementById('pricing');
-      if (pricingSection) {
-        pricingSection.scrollIntoView({ behavior: 'smooth' });
+      const waitlistSection = document.getElementById('scarcity-waitlist') || document.getElementById('pricing');
+      if (waitlistSection) {
+        waitlistSection.scrollIntoView({ behavior: 'smooth' });
       }
     }, 100);
   };
 
+  // Render secondary sub-pages if navigated away from landing
   if (view === 'curriculum') {
     return <CurriculumPage onBack={goBack} onEnroll={goToEnroll} />;
   }
@@ -53,6 +53,6 @@ export default function App() {
   }
 
   return (
-    <LandingPage onNavigate={handleNavigate} />
+    <Concept1DualDepth onNavigate={handleNavigate} />
   );
 }

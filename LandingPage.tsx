@@ -38,24 +38,204 @@ import {
   Bar
 } from 'recharts';
 
-// --- Brand Upward Arrow & Circuit Logo ---
-export const BrandLogo = ({ className = "w-6 h-6 text-[#ff4d4d]" }: { className?: string }) => (
-  <svg viewBox="0 0 100 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* Upward Arrow Head */}
-    <path d="M50 15 L78 42 H62 V72 H38 V42 H22 L50 15 Z" fill="currentColor" />
-    {/* Left Sensor Node */}
-    <rect x="8" y="32" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="6" />
-    <path d="M26 40 L36 40" stroke="currentColor" strokeWidth="6" strokeLinecap="round" />
-    <path d="M32 36 L36 40 L32 44" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
-    {/* Bottom Left Node */}
-    <rect x="8" y="68" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="6" />
-    {/* Right Terminal Node */}
-    <rect x="76" y="55" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="6" />
-    {/* Circuit Interconnects */}
-    <path d="M26 76 H50 V74" stroke="currentColor" strokeWidth="6" strokeLinecap="round" />
-    <path d="M50 74 V84 H70 V73" stroke="currentColor" strokeWidth="6" strokeLinecap="round" />
-  </svg>
-);
+// --- Official IT Outcomes Company Logo ---
+export const BrandLogo = ({ 
+  className = "w-7 h-7 text-[#ff3b4e]",
+  showWordmark = false,
+  glow = true
+}: { 
+  className?: string;
+  showWordmark?: boolean;
+  glow?: boolean;
+}) => {
+  if (showWordmark) {
+    return (
+      <div className="inline-flex flex-col items-center select-none group">
+        <svg 
+          viewBox="0 0 350 320" 
+          className={className} 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+          style={glow ? { filter: 'drop-shadow(0 0 10px rgba(255, 59, 78, 0.4))' } : undefined}
+        >
+          {/* Central Upward Hero Arrow with Slanted Base */}
+          <path 
+            d="M 175 22 L 232 94 H 200 V 176 L 150 214 V 94 H 118 Z" 
+            fill="currentColor" 
+          />
+          {/* Top-Left Process Node */}
+          <rect 
+            x="44" 
+            y="106" 
+            width="52" 
+            height="52" 
+            rx="8" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="11" 
+            strokeLinejoin="round" 
+          />
+          {/* Top-Left Feeder Arrow */}
+          <line 
+            x1="96" 
+            y1="132" 
+            x2="132" 
+            y2="132" 
+            stroke="currentColor" 
+            strokeWidth="11" 
+            strokeLinecap="round" 
+          />
+          <polygon 
+            points="126,118 148,132 126,146" 
+            fill="currentColor" 
+          />
+          {/* Bottom-Left Origin Node */}
+          <rect 
+            x="44" 
+            y="236" 
+            width="52" 
+            height="52" 
+            rx="8" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="11" 
+            strokeLinejoin="round" 
+          />
+          {/* Right Outcome Node */}
+          <rect 
+            x="232" 
+            y="164" 
+            width="52" 
+            height="52" 
+            rx="8" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="11" 
+            strokeLinejoin="round" 
+          />
+          {/* Interconnect Bus Trunk */}
+          <path 
+            d="M 96 262 H 247 A 11 11 0 0 0 258 251 V 216" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="11" 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+          />
+          {/* Vertical Bus Tap into Arrow Base */}
+          <line 
+            x1="175" 
+            y1="262" 
+            x2="175" 
+            y2="224" 
+            stroke="currentColor" 
+            strokeWidth="11" 
+            strokeLinecap="round" 
+          />
+          {/* Inline Flow Chevron */}
+          <polygon 
+            points="203,250 225,262 203,274" 
+            fill="currentColor" 
+          />
+        </svg>
+        <div className="mt-1 text-center font-black tracking-wider text-xs uppercase font-sans">
+          <span className="text-[#ff3b4e]">IT </span>
+          <span className="text-white">OUTCOMES</span>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <svg 
+      viewBox="0 0 350 320" 
+      className={className} 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      style={glow ? { filter: 'drop-shadow(0 0 8px rgba(255, 59, 78, 0.45))' } : undefined}
+    >
+      {/* Central Upward Hero Arrow with Slanted Base */}
+      <path 
+        d="M 175 22 L 232 94 H 200 V 176 L 150 214 V 94 H 118 Z" 
+        fill="currentColor" 
+      />
+      {/* Top-Left Process Node */}
+      <rect 
+        x="44" 
+        y="106" 
+        width="52" 
+        height="52" 
+        rx="8" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="11" 
+        strokeLinejoin="round" 
+      />
+      {/* Top-Left Feeder Arrow */}
+      <line 
+        x1="96" 
+        y1="132" 
+        x2="132" 
+        y2="132" 
+        stroke="currentColor" 
+        strokeWidth="11" 
+        strokeLinecap="round" 
+      />
+      <polygon 
+        points="126,118 148,132 126,146" 
+        fill="currentColor" 
+      />
+      {/* Bottom-Left Origin Node */}
+      <rect 
+        x="44" 
+        y="236" 
+        width="52" 
+        height="52" 
+        rx="8" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="11" 
+        strokeLinejoin="round" 
+      />
+      {/* Right Outcome Node */}
+      <rect 
+        x="232" 
+        y="164" 
+        width="52" 
+        height="52" 
+        rx="8" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="11" 
+        strokeLinejoin="round" 
+      />
+      {/* Interconnect Bus Trunk */}
+      <path 
+        d="M 96 262 H 247 A 11 11 0 0 0 258 251 V 216" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="11" 
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
+      />
+      {/* Vertical Bus Tap into Arrow Base */}
+      <line 
+        x1="175" 
+        y1="262" 
+        x2="175" 
+        y2="224" 
+        stroke="currentColor" 
+        strokeWidth="11" 
+        strokeLinecap="round" 
+      />
+      {/* Inline Flow Chevron */}
+      <polygon 
+        points="203,250 225,262 203,274" 
+        fill="currentColor" 
+      />
+    </svg>
+  );
+};
 
 // --- Dual-Perspective ITSM Dashboard Simulation ---
 const TransformationSimulator = () => {
@@ -306,13 +486,6 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
               ROI Calculator
             </button>
             <button 
-              id="nav-curriculum-btn"
-              onClick={() => onNavigate && onNavigate('curriculum')} 
-              className="hover:text-[#ff4d4d] transition-colors"
-            >
-              Curriculum (8 Modules)
-            </button>
-            <button 
               id="nav-pricing-btn"
               onClick={() => scrollTo('pricing')} 
               className="hover:text-[#ff4d4d] transition-colors"
@@ -521,32 +694,29 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
             ].map((item, idx) => (
               <div 
                 key={idx}
-                className="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="bg-slate-100/90 hover:bg-white rounded-2xl p-8 border border-slate-200 hover:border-[#ff4d4d] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group cursor-default"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-[#ff4d4d]/10 text-[#ff4d4d] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-[#ff4d4d]/10 text-[#ff4d4d] flex items-center justify-center group-hover:scale-110 transition-transform border border-[#ff4d4d]/20">
                       <item.icon className="w-6 h-6" />
                     </div>
-                    <span className="font-mono text-xs font-bold text-[#ff4d4d] bg-[#ff4d4d]/10 px-3 py-1 rounded-md">
-                      {item.code}
-                    </span>
                   </div>
 
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1">
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 block mb-1">
                     {item.label}
                   </span>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-[#ff4d4d] transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
                     {item.desc}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="text-slate-400 font-medium">How we resolve it:</span>
-                  <span className="text-slate-900 font-bold">{item.cure}</span>
+                <div className="pt-4 border-t border-slate-200 group-hover:border-slate-100 transition-colors flex items-center justify-between text-xs font-mono">
+                  <span className="text-slate-400 font-semibold">How we resolve it:</span>
+                  <span className="text-emerald-600 font-bold">{item.cure}</span>
                 </div>
               </div>
             ))}
@@ -1158,11 +1328,13 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
           
           {/* Brand Info */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-white/10 p-1.5 rounded">
-                <BrandLogo className="w-5 h-5 text-[#ff4d4d]" />
+            <div className="flex items-center gap-3.5 mb-4">
+              <div className="bg-[#0b0e14] p-2 rounded-xl border border-slate-700/80 shadow-md">
+                <BrandLogo className="w-8 h-8 text-[#ff3b4e]" glow={true} />
               </div>
-              <span className="font-extrabold text-lg text-white">IT <span className="text-[#ff4d4d]">Outcomes</span></span>
+              <span className="font-black text-xl tracking-tight font-sans">
+                <span className="text-[#ff3b4e] drop-shadow-[0_0_8px_rgba(255,59,78,0.4)]">IT</span> <span className="text-white">OUTCOMES</span>
+              </span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed mb-4">
               Framework-agnostic training empowering IT leaders to turn raw operational data into executive-ready strategic insights.
@@ -1220,6 +1392,11 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
           <div>
             <h4 className="font-bold text-white text-xs uppercase tracking-wider mb-4">Portal & Legal</h4>
             <ul className="space-y-2 text-slate-400 text-xs">
+              <li>
+                <a href="https://www.youtube.com/@ITOutcomes-CA" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+                  YouTube Channel <ArrowUpRight className="w-3 h-3 text-[#ff4d4d]" />
+                </a>
+              </li>
               <li>
                 <a href="https://portal.itoutcomes.ca" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
                   Student Portal <ArrowUpRight className="w-3 h-3 text-[#ff4d4d]" />

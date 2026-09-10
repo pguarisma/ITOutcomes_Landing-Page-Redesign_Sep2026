@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Red Neon Glow Filter -->
+    <filter id="redGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#redGlow)">
+    <!-- 1. Central Hero Arrow -->
+    <path 
+      d="M 200 32
+         L 255 102
+         H 224
+         V 185
+         L 176 222
+         V 102
+         H 145
+         Z" 
+      fill="#ff3b4e" 
+    />
+
+    <!-- 2. Top-Left Node (Rounded Square) -->
+    <rect 
+      x="70" 
+      y="114" 
+      width="52" 
+      height="52" 
+      rx="8" 
+      fill="none" 
+      stroke="#ff3b4e" 
+      stroke-width="11" 
+      stroke-linejoin="round"
+    />
+
+    <!-- Top-Left Connector with Arrowhead -->
+    <line 
+      x1="122" 
+      y1="140" 
+      x2="155" 
+      y2="140" 
+      stroke="#ff3b4e" 
+      stroke-width="11" 
+      stroke-linecap="round" 
+    />
+    <polygon 
+      points="150,126 172,140 150,154" 
+      fill="#ff3b4e" 
+    />
+
+    <!-- 3. Bottom-Left Node (Rounded Square) -->
+    <rect 
+      x="70" 
+      y="244" 
+      width="52" 
+      height="52" 
+      rx="8" 
+      fill="none" 
+      stroke="#ff3b4e" 
+      stroke-width="11" 
+      stroke-linejoin="round"
+    />
+
+    <!-- 4. Right Intermediate Node (Rounded Square) -->
+    <rect 
+      x="252" 
+      y="172" 
+      width="52" 
+      height="52" 
+      rx="8" 
+      fill="none" 
+      stroke="#ff3b4e" 
+      stroke-width="11" 
+      stroke-linejoin="round"
+    />
+
+    <!-- 5. Bus Architecture Interconnect -->
+    <!-- Horizontal trunk from bottom-left node to right node corner -->
+    <path 
+      d="M 122 270 
+         H 267 
+         A 11 11 0 0 0 278 259 
+         V 224" 
+      fill="none" 
+      stroke="#ff3b4e" 
+      stroke-width="11" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+    />
+
+    <!-- Vertical Feeder Branch up into Central Arrow Cut -->
+    <line 
+      x1="200" 
+      y1="270" 
+      x2="200" 
+      y2="225" 
+      stroke="#ff3b4e" 
+      stroke-width="11" 
+      stroke-linecap="round" 
+    />
+
+    <!-- Inline Arrowhead on Horizontal Line -->
+    <polygon 
+      points="226,258 248,270 226,282" 
+      fill="#ff3b4e" 
+    />
+  </g>
+
+  <!-- 6. Wordmark: "IT OUTCOMES" -->
+  <g id="wordmark">
+    <text 
+      x="200" 
+      y="380" 
+      text-anchor="middle" 
+      font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+      font-weight="900" 
+      font-size="36" 
+      letter-spacing="0.05em"
+    >
+      <tspan fill="#ff3b4e" filter="url(#softGlow)">IT</tspan>
+      <tspan fill="#ffffff" dx="10">OUTCOMES</tspan>
+    </text>
+  </g>
+</svg>

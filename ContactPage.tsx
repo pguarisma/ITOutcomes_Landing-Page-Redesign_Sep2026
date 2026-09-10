@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Mail, MessageSquare, AlertCircle, Copy, Check } from 'lucide-react';
+import { BrandLogo } from './LandingPage';
 
 interface ContactPageProps {
   onBack: () => void;
@@ -30,7 +31,10 @@ export const ContactPage = ({ onBack }: ContactPageProps) => {
             </div>
             Back to Main Page
           </button>
-          <div className="font-bold text-lg text-slate-900 tracking-tight">IT <span className="text-[#ff4d4d]">Outcomes</span></div>
+          <div className="flex items-center gap-2.5 font-black text-lg tracking-tight">
+            <BrandLogo className="w-5 h-5 text-[#ff3b4e]" glow={false} />
+            <span className="text-slate-900"><span className="text-[#ff3b4e]">IT</span> OUTCOMES</span>
+          </div>
         </div>
       </nav>
 
