@@ -687,415 +687,17 @@ export function Concept1DualDepth({ onNavigate }: ConceptProps) {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           
           {/* Section Introduction */}
-          <div className="max-w-3xl mx-auto text-center mb-12">
+          <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
             <span className="text-[#ff4d4d] font-mono text-xs font-bold uppercase tracking-widest block mb-2">
               [ THE OPERATING MODEL ]
             </span>
             <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-4">
               The Bedrock + Flywheel Framework
             </h2>
-            <p className="text-slate-300 text-base md:text-lg font-light leading-relaxed">
-              I do not teach an ad-hoc collection of metric tricks. Every solution I design, every outcome I deliver for clients, and every concept in my courses is grounded in a unified 3-part framework: <strong className="text-white font-semibold">Foundation</strong>, <strong className="text-white font-semibold">Execution</strong>, and <strong className="text-white font-semibold">Optimization</strong>.
+            <p className="text-slate-300 text-base md:text-lg font-light leading-relaxed mb-3">
+              I do not teach an ad-hoc collection of metric tricks. Every concept in my courses is grounded in a unified 3-part framework: <strong className="text-white font-semibold">Foundation</strong>, <strong className="text-white font-semibold">Execution</strong>, and <strong className="text-white font-semibold">Optimization</strong>.
             </p>
-          </div>
-
-          {/* Faint Divider Line */}
-          <div className="w-full border-t border-slate-800/80 my-12 max-w-5xl mx-auto" />
-
-          {/* Graphic Title & Caption */}
-          <div className="mb-8">
-            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-              ITSM Performance Engine: The Foundation + Flywheel Model
-            </h3>
-            <p className="text-slate-300 text-sm sm:text-base mt-1.5 font-light max-w-2xl">
-              Translating operational telemetry into board-level value through engineered governance and statistical rigor.
-            </p>
-          </div>
-
-          {/* ========================================== */}
-          {/* UPPER SECTION: THE CONTINUOUS FLYWHEEL */}
-          {/* ========================================== */}
-          <div className="relative bg-[#0d1424] border border-slate-700/70 rounded-2xl p-6 sm:p-8 overflow-hidden mb-16">
-                {/* Ambient glow patches within the flywheel container */}
-                <div className="absolute top-10 left-10 w-72 h-72 bg-[#ff4d4d]/10 blur-[90px] pointer-events-none rounded-full" />
-                <div className="absolute bottom-10 right-10 w-72 h-72 bg-amber-500/10 blur-[90px] pointer-events-none rounded-full" />
-
-                {/* Flywheel Banner Badge */}
-                <div className="flex items-center justify-between border-b border-slate-800/80 pb-4 mb-6">
-                  <div className="flex items-center gap-2">
-                    <RefreshCw className="w-4 h-4 text-[#ff4d4d] animate-spin-slow" />
-                    <span className="font-mono text-xs font-bold uppercase tracking-wider text-slate-200">
-                      THE CONTINUOUS PERFORMANCE FLYWHEEL
-                    </span>
-                  </div>
-                  <span className="font-mono text-[11px] text-slate-400 hidden sm:inline-block">
-                    Operational Telemetry ⇄ Experience &amp; Decision Layer
-                  </span>
-                </div>
-
-                {/* Two Pods: EXECUTION (Left) & OPTIMIZATION (Right) connected by physical bridge */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-6 lg:gap-y-0 lg:gap-x-0 items-stretch relative z-20 mt-2 mb-1">
-                  
-                  {/* Left Pod: EXECUTION */}
-                  <div className="lg:col-span-5 bg-slate-950/80 border-2 border-slate-700/80 rounded-xl p-5 sm:p-6 flex flex-col justify-between shadow-2xl relative z-10">
-                    <div>
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-2 text-[#ff4d4d]">
-                          <Activity className="w-5 h-5" />
-                          <h4 className="font-mono text-xs sm:text-sm font-bold tracking-wider uppercase text-white">
-                            EXECUTION: Operational &amp; Financial Telemetry
-                          </h4>
-                        </div>
-                      </div>
-                      <p className="text-xs text-slate-400 mb-5 leading-relaxed">
-                        Capturing the true velocity of the work, system changes, and operational cost without administrative burden.
-                      </p>
-
-                      <div className="space-y-3">
-                        <div className="p-3 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center gap-3">
-                          <TrendingDown className="w-4 h-4 text-amber-400 shrink-0" />
-                          <span className="font-bold text-xs sm:text-sm text-white block">Velocity, Backlog &amp; AI Agent Deflection</span>
-                        </div>
-
-                        <div className="p-3 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center gap-3">
-                          <Scale className="w-4 h-4 text-sky-400 shrink-0" />
-                          <span className="font-bold text-xs sm:text-sm text-white block">Agility vs. Stability (Change)</span>
-                        </div>
-
-                        <div className="p-3 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center gap-3">
-                          <DollarSign className="w-4 h-4 text-emerald-400 shrink-0" />
-                          <span className="font-bold text-xs sm:text-sm text-white block">Financial Reality (TCO / ROI)</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="mt-5 pt-3 border-t border-slate-800 text-[11px] font-mono text-slate-400 flex items-center justify-between">
-                      <span>Telemetry Layer</span>
-                      <span className="text-amber-400 font-semibold">Frontline Engine</span>
-                    </div>
-                  </div>
-
-                  {/* Center Physical Loop Bridge (Touches Both Left & Right Boxes Directly) */}
-                  <div className="lg:col-span-2 flex flex-col justify-between items-center relative py-1 px-0 h-full min-h-[320px] z-20">
-                    
-                    {/* Dual Conduits Group: Telemetry on Top, Calibration directly below */}
-                    <div className="w-full flex flex-col gap-2 relative">
-                      {/* Top Loop Segment: Telemetry Feed */}
-                      <div className="w-full relative flex items-center justify-center">
-                        <div className="absolute inset-x-0 h-[3px] bg-gradient-to-r from-[#ff4d4d] via-[#ff4d4d]/80 to-indigo-400 shadow-[0_0_10px_rgba(255,77,77,0.7)]" />
-                        {/* Left contact weld touching Execution border */}
-                        <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-[#ff4d4d] border-2 border-white shadow-[0_0_8px_#ff4d4d] z-30" />
-                        {/* Right contact weld touching Optimization border */}
-                        <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3.5 h-3.5 rounded-full bg-indigo-400 border-2 border-white shadow-[0_0_8px_#818cf8] z-30" />
-                        <div className="relative z-20 w-[108px] justify-center px-2.5 py-0.5 bg-[#0b101d] border border-[#ff4d4d]/60 rounded-full text-[10px] font-mono text-[#ff4d4d] font-bold flex items-center gap-1.5 shadow-md">
-                          <span>Telemetry</span>
-                          <ArrowRight className="w-3 h-3 text-[#ff4d4d] animate-pulse shrink-0" />
-                        </div>
-                      </div>
-
-                      {/* Second Segment: Calibration Return Feed (Moved below Telemetry) */}
-                      <div className="w-full relative flex items-center justify-center">
-                        <div className="absolute inset-x-0 h-[3px] bg-gradient-to-l from-indigo-400 via-amber-400 to-[#ff4d4d] shadow-[0_0_10px_rgba(245,158,11,0.7)]" />
-                        {/* Right contact weld touching Optimization border */}
-                        <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3.5 h-3.5 rounded-full bg-indigo-400 border-2 border-white shadow-[0_0_8px_#818cf8] z-30" />
-                        {/* Left contact weld touching Execution border */}
-                        <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-[#ff4d4d] border-2 border-white shadow-[0_0_8px_#ff4d4d] z-30" />
-                        <div className="relative z-20 w-[108px] justify-center px-2.5 py-0.5 bg-[#0b101d] border border-amber-400/60 rounded-full text-[10px] font-mono text-amber-300 font-bold flex items-center gap-1.5 shadow-md">
-                          <ArrowRight className="w-3 h-3 rotate-180 text-amber-400 animate-pulse shrink-0" />
-                          <span>Calibration</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* PRECISION CALIBRATION TOOL CRADLING THE FLYWHEEL (Originating from the Analytical Foundation) */}
-                    <div className="relative w-full flex flex-col items-center justify-end mt-2 z-30 pointer-events-none">
-                      <div className="relative w-full max-w-[216px] flex flex-col items-center">
-                        {/* The U-Tool Chassis Graphic stretching down into the Foundation below */}
-                        <svg 
-                          width="100%" 
-                          height="380" 
-                          viewBox="0 0 216 380" 
-                          fill="none" 
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="filter drop-shadow-[0_6px_28px_rgba(0,0,0,0.85)] relative z-30 pointer-events-auto lg:-mb-[104px]"
-                        >
-                          <defs>
-                            {/* Cast Emerald Enamel Chassis Gradient */}
-                            <linearGradient id="chassisGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                              <stop offset="0%" stopColor="#10b981" />
-                              <stop offset="20%" stopColor="#059669" />
-                              <stop offset="65%" stopColor="#047857" />
-                              <stop offset="100%" stopColor="#064e3b" />
-                            </linearGradient>
-
-                            {/* Bevel Highlight for machined edges */}
-                            <linearGradient id="bevelLight" x1="0%" y1="0%" x2="0%" y2="100%">
-                              <stop offset="0%" stopColor="#6ee7b7" stopOpacity="0.85" />
-                              <stop offset="100%" stopColor="#065f46" stopOpacity="0.25" />
-                            </linearGradient>
-
-                            {/* Steel Thumbscrew / Micrometer Pin Gradient */}
-                            <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                              <stop offset="0%" stopColor="#64748b" />
-                              <stop offset="50%" stopColor="#cbd5e1" />
-                              <stop offset="100%" stopColor="#475569" />
-                            </linearGradient>
-
-                            {/* Meter Dial Face Gradient */}
-                            <linearGradient id="dialFace" x1="0%" y1="0%" x2="0%" y2="100%">
-                              <stop offset="0%" stopColor="#020617" />
-                              <stop offset="100%" stopColor="#0f172a" />
-                            </linearGradient>
-
-                            {/* Conduit Core Energy Gradient */}
-                            <linearGradient id="energyCore" x1="0%" y1="100%" x2="0%" y2="0%">
-                              <stop offset="0%" stopColor="#34d399" />
-                              <stop offset="100%" stopColor="#10b981" />
-                            </linearGradient>
-                          </defs>
-
-                          {/* U-Cradle Main Cast Body (wide-set thin forks, extended vertical neck stretching deep into Foundation) */}
-                          <path
-                            d="M4 16 
-                               C4 12 6 10 9 10 
-                               C12 10 14 12 14 16 
-                               L14 78 
-                               C14 104 54 114 108 114 
-                               C162 114 202 104 202 78 
-                               L202 16 
-                               C202 12 204 10 207 10 
-                               C210 10 212 12 212 16 
-                               L212 78 
-                               C212 110 158 126 124 128 
-                               L124 378 
-                               L92 378 
-                               L92 128 
-                               C58 126 4 110 4 78 
-                               Z"
-                            fill="url(#chassisGrad)"
-                            stroke="#047857"
-                            strokeWidth="1.5"
-                          />
-
-                          {/* Machined Outer Edge Highlight */}
-                          <path
-                            d="M6 16 L6 76 C6 104 56 122 94 126 L94 378 M122 378 L122 126 C160 122 210 104 210 76 L210 16"
-                            stroke="url(#bevelLight)"
-                            strokeWidth="1"
-                            fill="none"
-                            strokeOpacity="0.7"
-                          />
-
-                          {/* Machined Inner Edge Highlight along wide-set thin forks */}
-                          <path
-                            d="M12 16 L12 76 C12 100 52 110 108 110 C164 110 204 100 204 76 L204 16"
-                            stroke="url(#bevelLight)"
-                            strokeWidth="1"
-                            fill="none"
-                            strokeOpacity="0.55"
-                          />
-
-                          {/* Central Pulsing Data Core Channel inside the extended neck */}
-                          <rect x="105" y="160" width="6" height="216" rx="3" fill="#022c22" stroke="#065f46" strokeWidth="0.8" />
-                          <line x1="108" y1="162" x2="108" y2="376" stroke="url(#energyCore)" strokeWidth="2.5" strokeLinecap="round" />
-
-                          {/* Vertical Column Calibration Ribs along the extended descending neck */}
-                          <line x1="94" y1="168" x2="103" y2="168" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="168" x2="122" y2="168" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="184" x2="103" y2="184" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="184" x2="122" y2="184" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="200" x2="103" y2="200" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="200" x2="122" y2="200" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="216" x2="103" y2="216" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="216" x2="122" y2="216" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="232" x2="103" y2="232" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="232" x2="122" y2="232" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="248" x2="103" y2="248" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="248" x2="122" y2="248" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="264" x2="103" y2="264" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="264" x2="122" y2="264" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="280" x2="103" y2="280" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="280" x2="122" y2="280" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="296" x2="103" y2="296" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="296" x2="122" y2="296" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="312" x2="103" y2="312" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="312" x2="122" y2="312" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="328" x2="103" y2="328" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="328" x2="122" y2="328" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="344" x2="103" y2="344" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="344" x2="122" y2="344" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="94" y1="360" x2="103" y2="360" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-                          <line x1="113" y1="360" x2="122" y2="360" stroke="#34d399" strokeWidth="1.2" strokeOpacity="0.6" />
-
-                          {/* ========================================================= */}
-                          {/* INDICATOR METER ON THE STEM/NECK WITH DYNAMIC NEEDLE     */}
-                          {/* ========================================================= */}
-                          {/* Outer metallic meter frame */}
-                          <rect x="88" y="128" width="40" height="25" rx="3" fill="#0f172a" stroke="#475569" strokeWidth="1.2" />
-                          {/* Inner dial bezel */}
-                          <rect x="90" y="130" width="36" height="21" rx="2" fill="url(#dialFace)" stroke="#1e293b" strokeWidth="0.8" />
-
-                          {/* Corner screws on meter */}
-                          <circle cx="91" cy="131" r="0.7" fill="#94a3b8" />
-                          <circle cx="125" cy="131" r="0.7" fill="#94a3b8" />
-                          <circle cx="91" cy="150" r="0.7" fill="#94a3b8" />
-                          <circle cx="125" cy="150" r="0.7" fill="#94a3b8" />
-
-                          {/* Dial Arc Scale */}
-                          <path d="M94 143 A 14 14 0 0 1 122 143" stroke="#475569" strokeWidth="1" fill="none" />
-                          {/* Calibrated Zone on arc (Green) */}
-                          <path d="M104 135 A 14 14 0 0 1 118 140" stroke="#34d399" strokeWidth="1.5" fill="none" />
-                          {/* Threshold zone on arc (Red) */}
-                          <path d="M118 140 A 14 14 0 0 1 122 143" stroke="#ff4d4d" strokeWidth="1.5" fill="none" />
-
-                          {/* Tick Marks */}
-                          <line x1="95" y1="142" x2="97" y2="141" stroke="#94a3b8" strokeWidth="0.8" />
-                          <line x1="101" y1="137" x2="102" y2="138" stroke="#94a3b8" strokeWidth="0.8" />
-                          <line x1="108" y1="134" x2="108" y2="136" stroke="#94a3b8" strokeWidth="1" />
-                          <line x1="115" y1="137" x2="114" y2="138" stroke="#94a3b8" strokeWidth="0.8" />
-                          <line x1="121" y1="142" x2="119" y2="141" stroke="#94a3b8" strokeWidth="0.8" />
-
-                          {/* Dial tiny label */}
-                          <text x="108" y="142" fontSize="5" fontFamily="monospace" fill="#64748b" textAnchor="middle" fontWeight="bold">CAL</text>
-
-                          {/* Live Indicator Needle */}
-                          <motion.line
-                            x1="108"
-                            y1="148"
-                            x2="108"
-                            y2="133"
-                            stroke="#ff4d4d"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            animate={{ rotate: [-14, 10, -5, 18, -8] }}
-                            transition={{ repeat: Infinity, duration: 3.6, ease: "easeInOut" }}
-                            style={{ transformOrigin: "108px 148px" }}
-                          />
-                          {/* Needle Pivot Hub */}
-                          <circle cx="108" cy="148" r="2.2" fill="#1e293b" stroke="#ff4d4d" strokeWidth="0.9" />
-                        </svg>
-
-                        {/* FLYWHEEL: Spinning Red Arrows nestled directly INSIDE the wide-separated thin forks */}
-                        <div className="absolute top-[8px] left-1/2 -translate-x-1/2 z-20 pointer-events-none flex items-center justify-center">
-                          <RefreshCw 
-                            className="w-[106px] h-[106px] text-[#ff4d4d] animate-[spin_10s_linear_infinite] drop-shadow-[0_0_24px_rgba(255,77,77,0.65)]" 
-                            strokeWidth={2.4} 
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  {/* Right Pod: OPTIMIZATION */}
-                  <div className="lg:col-span-5 bg-slate-950/80 border-2 border-slate-700/80 rounded-xl p-5 sm:p-6 flex flex-col justify-between shadow-2xl relative z-10">
-                    <div>
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-2 text-indigo-400">
-                          <Compass className="w-5 h-5" />
-                          <h4 className="font-mono text-xs sm:text-sm font-bold tracking-wider uppercase text-white">
-                            OPTIMIZATION: Experience &amp; Decision Layer
-                          </h4>
-                        </div>
-                      </div>
-                      <p className="text-xs text-slate-400 mb-5 leading-relaxed">
-                        Translating telemetry into customer sentiment (XLAs), board-ready stories, and sustainable engineering culture.
-                      </p>
-
-                      <div className="space-y-3">
-                        <div className="p-3 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center gap-3">
-                          <Smile className="w-4 h-4 text-emerald-400 shrink-0" />
-                          <span className="font-bold text-xs sm:text-sm text-white block">Customer Experience &amp; Burnout Prevention</span>
-                        </div>
-
-                        <div className="p-3 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center gap-3">
-                          <Users className="w-4 h-4 text-indigo-400 shrink-0" />
-                          <span className="font-bold text-xs sm:text-sm text-white block">Role-Based Modern Dashboards</span>
-                        </div>
-
-                        <div className="p-3 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center gap-3">
-                          <ShieldCheck className="w-4 h-4 text-rose-400 shrink-0" />
-                          <span className="font-bold text-xs sm:text-sm text-white block">Sustainable Data Culture</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="mt-5 pt-3 border-t border-slate-800 text-[11px] font-mono text-slate-400 flex items-center justify-between">
-                      <span>Executive Layer</span>
-                      <span className="text-indigo-400 font-semibold">Decision Engine</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ========================================== */}
-                {/* LOWER SECTION: ANALYTICAL FOUNDATION (BEDROCK) */}
-                {/* Pulled tight against Execution & Optimization pods, directly receiving the neck of the calibration tool */}
-                {/* ========================================== */}
-                <div className="bg-slate-950/80 border-2 border-slate-700/80 rounded-xl p-5 sm:p-6 shadow-inner relative z-10 -mt-2 sm:-mt-2.5">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4 mb-5 relative min-h-[46px]">
-                    <div className="flex items-center gap-2 shrink-0">
-                      <Database className="w-5 h-5 text-emerald-400" />
-                      <h4 className="font-mono text-xs sm:text-sm font-bold uppercase tracking-wider text-white whitespace-nowrap">
-                        ANALYTICAL FOUNDATION (BEDROCK)
-                      </h4>
-                    </div>
-
-                    {/* Centered Green Horizontal Label "Calibrates and Governs" inside the Analytical Foundation at the height of the anchor text */}
-                    <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-30 flex-col items-center pointer-events-none">
-                      {/* Mechanical Docking Neck Collar seamlessly connecting to the descending tool stem */}
-                      <div className="w-8 h-6 -mb-[1px] bg-gradient-to-b from-[#047857] to-[#022c22] border-t border-x border-emerald-500/80 rounded-t flex items-center justify-center relative shadow-[0_0_12px_rgba(16,185,129,0.3)]">
-                        <div className="w-1.5 h-full bg-emerald-400 shadow-[0_0_8px_#34d399]" />
-                      </div>
-                      <div className="px-3.5 py-1.5 bg-slate-900 border border-emerald-500/80 rounded-md text-[10px] sm:text-[11px] font-mono font-bold text-emerald-300 tracking-wide flex items-center gap-1.5 shadow-[0_0_16px_rgba(16,185,129,0.35)]">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-                        <span>Calibrates and Governs</span>
-                      </div>
-                    </div>
-
-                    {/* Right: Wrapped scientific anchor text */}
-                    <div className="max-w-[210px] sm:max-w-[230px] text-left sm:text-right shrink-0">
-                      <span className="font-mono text-[11px] text-slate-400 leading-snug block">
-                        The scientific anchor without which metrics degrade into vanity noise
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* Bedrock Pillar 1: Outcome Governance */}
-                    <div className="bg-slate-900/90 border border-slate-700 hover:border-emerald-500/50 rounded-xl p-4 sm:p-5 transition-all flex flex-col justify-center">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="font-mono text-[10px] font-bold text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-2 py-0.5 rounded">
-                          GOVERNANCE BEDROCK
-                        </span>
-                      </div>
-                      <h5 className="text-sm sm:text-base font-bold text-white">
-                        Outcome Governance: Decoupling Output from Value
-                      </h5>
-                    </div>
-
-                    {/* Bedrock Pillar 2: Applied Statistical Rigor */}
-                    <div className="bg-slate-900/90 border border-slate-700 hover:border-[#ff4d4d]/50 rounded-xl p-4 sm:p-5 transition-all flex flex-col justify-center">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className="font-mono text-[10px] font-bold text-[#ff4d4d] bg-[#ff4d4d]/10 border border-[#ff4d4d]/30 px-2 py-0.5 rounded">
-                          STATISTICAL BEDROCK
-                        </span>
-                      </div>
-                      <h5 className="text-sm sm:text-base font-bold text-white">
-                        Applied Statistical Rigor: Moving Beyond Misleading Averages
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-          {/* ========================================================================= */}
-          {/* THE 3 CORE AREAS: HOW I SOLVE, DELIVER OUTCOMES & TEACH */}
-          {/* ========================================================================= */}
-          <div className="mb-8">
-            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight text-center">
-              How the 3 Areas Map to Solutions, Outcomes, and Offerings
-            </h3>
-            <p className="text-slate-400 text-sm text-center mt-2 max-w-2xl mx-auto">
+            <p className="text-slate-400 text-sm font-light max-w-2xl mx-auto">
               Whether through hands-on advisory, downloadable toolkits, or on-demand masterclasses, this framework ensures you move directly from vanity metrics to board-level leverage.
             </p>
           </div>
@@ -1116,20 +718,20 @@ export function Concept1DualDepth({ onNavigate }: ConceptProps) {
                 The Analytical Foundation
               </h4>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5 font-light">
-                The mathematical and governance baseline. Without statistical rigor, every dashboard and SLA report is an exercise in self-delusion.
+                The math that keeps your reporting honest. If your baseline numbers are flawed, every dashboard and SLA report is just wishful thinking.
               </p>
 
               <div className="space-y-3 text-xs">
                 <div className="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
-                  <span className="font-bold text-slate-200 block mb-1">What I Solve &amp; Build:</span>
+                  <span className="font-bold text-slate-200 block mb-1">Skills I Help Build:</span>
                   <span className="text-slate-400 font-light">
-                    Replace flawed arithmetic means with percentile baselines (P80/P95), establish outcome governance, and isolate chronic tail risk.
+                    Ditch misleading averages for realistic percentiles (like P80/P95), measure genuine business outcomes instead of vanity metrics, and catch the chronic issues hiding in your numbers.
                   </span>
                 </div>
                 <div className="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
                   <span className="font-bold text-slate-200 block mb-1">Tangible Outcome:</span>
                   <span className="text-emerald-400 font-mono font-semibold">
-                    Defensible data integrity that survives C-suite scrutiny.
+                    Clean, trustworthy data that easily holds up when leadership starts asking tough questions.
                   </span>
                 </div>
               </div>
@@ -1149,20 +751,20 @@ export function Concept1DualDepth({ onNavigate }: ConceptProps) {
                 Frontline Execution
               </h4>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5 font-light">
-                Capturing operational and financial telemetry. Giving queue managers, team leads, and practitioners immediate clarity on queue velocity and risk.
+                Practical metrics for the daily grind. Giving team leads and frontline staff a crystal-clear look at ticket flow, queue health, and real operational costs.
               </p>
 
               <div className="space-y-3 text-xs">
                 <div className="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
-                  <span className="font-bold text-slate-200 block mb-1">What I Solve &amp; Build:</span>
+                  <span className="font-bold text-slate-200 block mb-1">Skills I Help Build:</span>
                   <span className="text-slate-400 font-light">
-                    Queue burn-down velocity models, autonomous AI agent deflection tracking, change failure risk gates, and total cost of ownership (TCO) calculations per ticket type.
+                    Clear queue burn-down pacing, tracking for AI agent deflection, smart change-risk checks, and true cost calculations for every ticket type.
                   </span>
                 </div>
                 <div className="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
                   <span className="font-bold text-slate-200 block mb-1">Tangible Outcome:</span>
                   <span className="text-[#ff4d4d] font-mono font-semibold">
-                    Mathematically defended staffing &amp; predictable backlogs.
+                    Relevant business KPIs that avoid vanity metrics, predictable backlogs, and the hard proof you need to justify your staffing levels.
                   </span>
                 </div>
               </div>
@@ -1182,20 +784,20 @@ export function Concept1DualDepth({ onNavigate }: ConceptProps) {
                 Strategic Optimization
               </h4>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5 font-light">
-                The customer experience and executive decision layer. Turning operational telemetry into Customer Experience (XLAs), client retention, and budget approval.
+                Connecting everyday operations to leadership decisions. Turning daily ticket data into great user experiences, protected teams, and secured funding.
               </p>
 
               <div className="space-y-3 text-xs">
                 <div className="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
-                  <span className="font-bold text-slate-200 block mb-1">What I Solve &amp; Build:</span>
+                  <span className="font-bold text-slate-200 block mb-1">Skills I Help Build:</span>
                   <span className="text-slate-400 font-light">
-                    Experience Level Agreements (XLAs), engineer burnout mitigation metrics, and single-screen executive dashboards.
+                    Experience Level Agreements (XLAs) that measure user happiness, workload metrics that keep your team from burning out, and one-page executive dashboards that answer &ldquo;so what?&rdquo;
                   </span>
                 </div>
                 <div className="p-3 bg-slate-900/90 rounded-lg border border-slate-800">
                   <span className="font-bold text-slate-200 block mb-1">Tangible Outcome:</span>
                   <span className="text-indigo-300 font-mono font-semibold">
-                    Board-level buy-in, budget approval &amp; protected teams.
+                    Clear executive buy-in, approved budgets, and a team that stays supported.
                   </span>
                 </div>
               </div>
@@ -1434,20 +1036,20 @@ export function Concept1DualDepth({ onNavigate }: ConceptProps) {
           
           <div className="max-w-3xl mx-auto text-center mb-16">
             <span className="text-[#ff4d4d] font-mono text-xs font-bold uppercase tracking-widest block mb-2">
-              [ THE LEARNING & TOOLKIT SUITE ]
+              [ THE LEARNING &amp; TOOLKIT SUITE ]
             </span>
             <h2 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
               Tools, training, and operational frameworks.
             </h2>
             <p className="text-slate-600 text-base">
-              From free YouTube video teardowns to production-ready Excel/Figma material kits and our comprehensive flagship masterclass.
+              From free YouTube video teardowns to our focused foundation training and comprehensive flagship masterclass.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
-            {/* TIER 01: Free YouTube Mini-Courses (Col 6) */}
-            <div className="lg:col-span-6 bg-white border border-slate-200/90 rounded-2xl p-8 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all">
+            {/* TIER 01: Free YouTube Mini-Courses */}
+            <div className="bg-white border border-slate-200/90 rounded-2xl p-8 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="font-mono text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
@@ -1458,22 +1060,26 @@ export function Concept1DualDepth({ onNavigate }: ConceptProps) {
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">
                   Free YouTube Mini-Courses
                 </h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
+                <p className="text-slate-600 text-sm leading-relaxed mb-4 font-normal">
                   Short, practical video teardowns breaking down specific calculation traps. Learn how to calculate real percentile MTTR in Excel, isolate backlog queues, and construct defensible dashboards.
                 </p>
 
+                {/* Downloadable material kits notice */}
+                <div className="mb-6 p-3 bg-emerald-50/90 border border-emerald-200 rounded-lg flex items-start gap-2.5 text-xs text-emerald-900">
+                  <Download className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span className="leading-snug">
+                    <strong className="font-bold">Downloadable Material Kits:</strong> Select mini-courses include companion spreadsheet templates and material kits available for free download.
+                  </span>
+                </div>
+
                 <div className="space-y-3 font-mono text-xs">
                   <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-center justify-between">
-                    <span className="text-slate-800 font-medium">Calculating Real MTTR (Beyond the Mean)</span>
-                    <span className="text-[#ff4d4d] font-bold">8 min</span>
+                    <span className="text-slate-800 font-medium">Stop Using Fixed Averages for Dynamic Data</span>
+                    <span className="text-[#ff4d4d] font-bold">9 min</span>
                   </div>
                   <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-center justify-between">
-                    <span className="text-slate-800 font-medium">SLA vs XLA: The Practical Gap</span>
-                    <span className="text-[#ff4d4d] font-bold">11 min</span>
-                  </div>
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-center justify-between">
-                    <span className="text-slate-800 font-medium">Building a 1-Page Executive Storyboard</span>
-                    <span className="text-[#ff4d4d] font-bold">14 min</span>
+                    <span className="text-slate-800 font-medium">False Resolution Rates of AI Agents</span>
+                    <span className="text-[#ff4d4d] font-bold">4 min</span>
                   </div>
                 </div>
               </div>
@@ -1492,70 +1098,14 @@ export function Concept1DualDepth({ onNavigate }: ConceptProps) {
               </div>
             </div>
 
-            {/* TIER 02: Gated Material Kits (Col 6) */}
-            <div className="lg:col-span-6 bg-white border-2 border-[#ff4d4d]/40 rounded-2xl p-8 flex flex-col justify-between relative shadow-md hover:shadow-xl transition-all">
-              <div className="absolute top-4 right-4">
-                <span className="font-mono text-xs font-bold text-[#ff4d4d] bg-[#ff4d4d]/10 px-2.5 py-0.5 rounded border border-[#ff4d4d]/20">
-                  FREE WORK EMAIL ACCESS
-                </span>
-              </div>
-              
-              <div>
-                <span className="font-mono text-xs text-slate-400 block mb-1">TIER 02</span>
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                  Gated Operational Material Kits
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
-                  Production-ready Excel models, weighting formulas, and dashboard blueprints. Ready to download and deploy across your team immediately.
-                </p>
-
-                <div className="space-y-3 font-mono text-xs">
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <FileSpreadsheet className="w-4 h-4 text-emerald-600" />
-                      <span className="text-slate-800 font-medium">XLA Survey Questions & Weighting Matrix</span>
-                    </div>
-                    <span className="text-slate-500 font-semibold">XLSX</span>
-                  </div>
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <FileText className="w-4 h-4 text-blue-600" />
-                      <span className="text-slate-800 font-medium">ITSM Metric Calculation & Formula Reference</span>
-                    </div>
-                    <span className="text-slate-500 font-semibold">PDF</span>
-                  </div>
-                  <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <Layers className="w-4 h-4 text-amber-600" />
-                      <span className="text-slate-800 font-medium">Executive Dashboard Wireframe Blueprint</span>
-                    </div>
-                    <span className="text-slate-500 font-semibold">FIGMA / PDF</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-slate-100">
-                <button
-                  onClick={() => {
-                    setSelectedKit('Complete Operational Material Kit Bundle');
-                    setShowKitModal(true);
-                  }}
-                  className="w-full py-3 bg-[#ff4d4d] hover:bg-[#ff3333] text-white font-bold text-xs font-mono uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg shadow-[#ff4d4d]/20"
-                >
-                  <Download className="w-4 h-4" />
-                  Unlock Free Material Kits (Email)
-                </button>
-              </div>
-            </div>
-
-            {/* TIER 03: 1-Hour QuickStart Foundation Course (Col 6) */}
-            <div className="lg:col-span-6 bg-white border border-slate-200/90 rounded-2xl p-8 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all">
+            {/* TIER 02: 1-Hour QuickStart Foundation Course */}
+            <div className="bg-white border border-slate-200/90 rounded-2xl p-8 flex flex-col justify-between shadow-sm hover:shadow-lg transition-all">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="font-mono text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">
                     60-MIN FOUNDATION TRAINING
                   </span>
-                  <span className="font-mono text-xs text-slate-400">TIER 03</span>
+                  <span className="font-mono text-xs text-slate-400">TIER 02</span>
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">
                   1-Hour QuickStart Course
@@ -1587,14 +1137,14 @@ export function Concept1DualDepth({ onNavigate }: ConceptProps) {
               </div>
             </div>
 
-            {/* TIER 04: Flagship Deep-Dive Course (Col 6) */}
-            <div className="lg:col-span-6 bg-gradient-to-br from-[#131b2e] to-[#0a0f1d] border-2 border-[#ff4d4d] rounded-2xl p-8 flex flex-col justify-between shadow-xl text-white relative overflow-hidden">
+            {/* TIER 03: Flagship Deep-Dive Course */}
+            <div className="bg-gradient-to-br from-[#131b2e] to-[#0a0f1d] border-2 border-[#ff4d4d] rounded-2xl p-8 flex flex-col justify-between shadow-xl text-white relative overflow-hidden">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="font-mono text-xs font-bold text-[#ff4d4d] bg-[#ff4d4d]/20 px-2.5 py-0.5 rounded border border-[#ff4d4d]/30">
-                    PRIMARY MONETIZATION // WAITLIST
+                    ADVANCED MASTERCLASS // WAITLIST
                   </span>
-                  <span className="font-mono text-xs text-slate-400">TIER 04</span>
+                  <span className="font-mono text-xs text-slate-400">TIER 03</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">
                   Flagship Deep-Dive Masterclass
